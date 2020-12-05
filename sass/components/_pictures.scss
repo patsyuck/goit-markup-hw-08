@@ -1,0 +1,41 @@
+.pictures-section {
+    padding-bottom: 94px;
+
+    @include breakpoint(non-desktop) {
+        display: none;
+    }
+}
+
+.images {
+    display: flex;
+    flex-wrap: row;
+    margin-left: -30px;
+
+    @include breakpoint(non-desktop) {
+        display: none;
+    }
+}
+
+.image {
+    margin-left: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+    /*width: 370px;*/
+    position: relative;
+}
+
+.sign {
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    color: $color-background;
+    background-color: $color-sign;
+}

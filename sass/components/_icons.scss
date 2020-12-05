@@ -1,0 +1,114 @@
+.envelope {
+    width: 16px;
+    height: 12px;
+
+    .contact-header:hover &,  .contact-header:focus & {
+        fill: $color-accent;
+    }
+}
+
+.smartphone {
+    width: 10px;
+    height: 16px;
+
+    .contact-header:hover &,  .contact-header:focus & {
+        fill: $color-accent;
+    }
+}
+
+.envelope, .smartphone {
+    margin-right: 10px;
+    fill: $color-primary;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svg-feature {
+    width: 70px;
+    height: 70px;
+}
+
+.svg-client-1 {
+    width: 44px;
+    height: 49px;
+}
+
+.svg-client-2 {
+    width: 40px;
+    height: 52px;
+}
+
+.svg-client-3 {
+    width: 41px;
+    height: 43px;
+}
+
+.svg-client-4 {
+    width: 80px;
+    height: 42px;
+}
+
+.svg-client-5 {
+    width: 59px;
+    height: 47px;
+}
+
+.svg-client-6 {
+    width: 88px;
+    height: 45px;
+}
+
+.svg-web, .svg-footer-web {
+    width: 20px;
+    height: 20px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svg-web {
+    fill: $color-icon;
+
+    .link-web:hover &, .link-web:focus & {
+        fill: $color-background;
+    }
+}
+
+.svg-footer-web {
+    fill: $color-background;
+
+    .link-footer-web:hover &, .link-footer-web:focus & {
+        fill: $color-background;
+    }
+}
+
+.modal-name-svg {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 107px;
+    left: 55px;
+}
+
+.modal-phone-svg {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 174px;
+    left: 54px;
+}
+
+.modal-email-svg {
+    position: absolute;
+    width: 15px;
+    height: 12px;
+    top: 243px;
+    left: 54px;
+}
+
+.svg-telegram {
+    width: 24px;
+    height: 24px;
+    fill: $color-background;
+}

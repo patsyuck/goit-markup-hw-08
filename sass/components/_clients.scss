@@ -1,0 +1,33 @@
+.item-client:not(:last-child) {
+    margin-right: 30px;
+}
+
+.link-client {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid $color-icon;
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus {
+        border: 1px solid $color-accent;
+    }
+}
+
+.client {
+    fill: $color-icon;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .link-client:hover &, .link-client:focus & {
+        fill: $color-accent;
+    }
+}

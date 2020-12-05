@@ -1,0 +1,9 @@
+.block-button {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn:not(:last-child) {
+    margin-right: 8px;
+}

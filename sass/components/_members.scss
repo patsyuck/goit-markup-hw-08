@@ -1,0 +1,88 @@
+.names-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $color-button-background;
+
+    @include breakpoint(desktop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.container-name {
+    @include breakpoint(tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+    }
+
+    @include breakpoint(only-tablet) {
+        margin-top: -30px;
+    }
+}
+
+.block-name {
+    /*width: 270px;*/
+    @include breakpoint(tablet) {
+        margin-left: 30px;
+        flex-basis: calc(100% / 2 - 30px);
+    }
+
+    @include breakpoint(only-tablet) {
+        margin-top: 30px;
+    }
+
+    @include breakpoint(desktop) {
+        flex-basis: calc(100% / 4 - 30px);
+    }
+
+    background-color: $color-background;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px $color-shadow-4, 0px 1px 1px $color-shadow-5, 0px 2px 1px $color-shadow-8;
+}
+
+.block-name:not(:first-child) {
+    @include breakpoint(non-tablet) {
+        margin-top: 30px;
+    }
+}
+
+.img-name {
+    width: 100%;
+    height: 100%;
+
+    @include breakpoint(mobile) {
+        width: 450px;
+        height: 460px;
+    }
+
+    @include breakpoint(tablet) {
+        width: 354px;
+        height: 374px;
+    }
+
+    @include breakpoint(desktop) {
+        width: 270px;
+        height: 260px;
+    }
+}
+
+.name {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.header-name {
+    font-weight: 500;
+    font-size: 16px;
+    color: $color-header;
+    line-height: 19px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.desc-name {
+    line-height: 19px;
+    text-align: center;
+    margin-bottom: 16px;
+}
