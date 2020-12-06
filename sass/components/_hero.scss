@@ -1,10 +1,15 @@
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-color: $color-hero-background;
     background-image: linear-gradient(to right, $color-hero-gradient, $color-hero-gradient), url(../images/fon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include breakpoint(desktop) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 }
 
 .section-main {
@@ -14,14 +19,21 @@
 }
 
 .header-main {
+    width: 360px;
+    height: 84px;
+    font-size: 26px;
+    line-height: 42px;
     font-weight: 900;
-    font-size: 44px;
     color: $color-background;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.06em;
-    line-height: 60px;
-    width: 696px;
-    height: 120px;
     margin-bottom: 30px;
+
+    @include breakpoint(desktop) {
+        width: 696px;
+        height: 120px;
+        font-size: 44px;
+        line-height: 60px;
+    }
 }

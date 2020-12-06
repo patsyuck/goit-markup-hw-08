@@ -35,19 +35,58 @@ footer {
 }
 
 .container-footer {
-    display: flex;
+    @include breakpoint(non-desktop) {
+        text-align: center;
+    }
+
+    @include breakpoint(desktop) {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.left-center {
+    @include breakpoint(tablet) {
+        display: flex;
+    }
+
+    @include breakpoint(only-tablet) {
+        justify-content: space-between;
+        padding-left: 76px;
+        padding-right: 89px;
+    }
+
+    @include breakpoint(desktop) {
+        margin-right: auto;
+    }
 }
 
 .left-footer {
-    margin-right: 70px;
-}
+    @include breakpoint(desktop) {
+        margin-right: 70px;
+    }
+}   
 
 .center-footer {
-    margin-right: 93px;
+    @include breakpoint(non-tablet) {
+        margin-top: 60px;
+    }
+
+    @include breakpoint(only-tablet) {
+        padding-top: 5px;
+    }
+}
+
+.right-footer {
+    @include breakpoint(non-desktop) {
+        margin-top: 60px;
+    }
 }
 
 .center-footer, .right-footer {
-    padding-top: 12px;
+    @include breakpoint(desktop) {
+        padding-top: 12px;
+    }
 }
 
 .together {
@@ -62,4 +101,8 @@ footer {
 .icons-footer-web {
     display:flex;
     margin-top: 20px;
+
+    @include breakpoint(non-desktop) {
+        justify-content: center;
+    }
 }

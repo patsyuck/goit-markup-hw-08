@@ -1,12 +1,42 @@
-.item-client:not(:last-child) {
-    margin-right: 30px;
+.permanent-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include breakpoint(desktop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.icons-client {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+
+    @include breakpoint(non-desktop) {
+        margin-top: -30px;
+    }
+}
+
+.item-client {
+    margin-left: 30px;
+    flex-basis: calc(100% / 6 - 30px);
+
+    @include breakpoint(non-desktop) {
+        margin-top: 30px;
+        flex-basis: calc(100% / 3 - 30px);
+    }
+
+    @include breakpoint(non-tablet) {
+        flex-basis: calc(100% / 2 - 30px);
+    }
 }
 
 .link-client {
     display:flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    /*width: 170px;*/
     height: 90px;
     border: 1px solid $color-icon;
     box-sizing: border-box;

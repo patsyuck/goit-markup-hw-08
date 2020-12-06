@@ -61,24 +61,21 @@ ul {
     font-weight: 700;
     color: $color-header;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     @include breakpoint(desktop) {
         font-size: 36px;
         line-height: 42px;
-    }
-
-    @include breakpoint(non-desktop) {
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 }
 
-.block-portfolio, .permanent-section {
+.block-portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.icons-web, .icons-client {
+.icons-web {
     display:flex;
     justify-content: center;
 }
