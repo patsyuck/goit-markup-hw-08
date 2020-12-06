@@ -1,3 +1,13 @@
+.button-mobile {
+    display: none;
+
+    @include breakpoint(non-tablet) {
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+}
+
 .button-main {
     font-family: $font-main;
     font-weight: 700;
