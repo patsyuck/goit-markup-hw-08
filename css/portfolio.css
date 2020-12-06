@@ -3,11 +3,10 @@
   padding: 0px;
 }
 
-/* for testing only */
+/* for testing only
 *, ::after, ::before {
-  outline: 2px solid red;
-}
-
+    outline: 2px solid red;
+}*/
 p, h1, h2, h3, ul {
   margin-block-start: 0px;
   margin-block-end: 0px;
@@ -448,6 +447,7 @@ header .logo {
 .contact-header {
   display: flex;
   align-items: center;
+  justify-content: center;
   color: #757575;
   font-style: normal;
 }
@@ -502,12 +502,23 @@ header .logo {
 
 .mobile-menu {
   text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #FFFFFF;
+  opacity: 0;
+  visibility: hidden;
 }
 
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
   }
+}
+
+.mobile-menu.open {
+  opacity: 1;
+  visibility: visible;
 }
 
 .container-mobile-nav {
