@@ -1,30 +1,33 @@
 .desc {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
     margin-top: -30px;
+
+    @include breakpoint(tablet) {
+        margin-left: -30px;
+    }
 }
 
 .desc-portfolio {
-    margin-left: 30px;
+    /*width: 370px;*/
     margin-top: 30px;
-    flex-basis: calc(100% / 3 - 30px);
-    /*width: 370px;
+    width: 100%;
 
-    &:nth-child(n+4) {
-        margin-top: 30px;
+    @include breakpoint(tablet) {
+        margin-left: 30px;
+        flex-basis: calc(100% / 2 - 30px);
     }
     
-    &:not(:nth-child(3n+1)) {
-        margin-left: 30px;
-    }*/
+    @include breakpoint(desktop) {
+        flex-basis: calc(100% / 3 - 30px);
+    }
 }
 
 .link-portfolio {
     display: block;
-    width: 370px;
+    /*width: 370px;
     height: 404px;
-    /*width: 100%;
+    width: 100%;
     height: auto;*/
     transition-property: box-shadow;
     transition-duration: 250ms;

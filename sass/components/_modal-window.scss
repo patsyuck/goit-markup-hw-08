@@ -1,14 +1,29 @@
 .modal {
     position: absolute;
-    width: 528px;
-    height: 581px;
+    width: 100%;
+    height: auto;
     background-color: $color-background;
     box-shadow: 0px 1px 3px $color-shadow-4, 0px 1px 1px $color-shadow-5, 0px 2px 1px $color-shadow-8;
     border-radius: 4px;
-    top: 221px;
+    top: 93px;
     left: 50%;
     transform: translateX(-50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include breakpoint(mobile) {
+        width: 450px;
+        height: 609px;
+    }
+
+    @include breakpoint(tablet) {
+        top: 208px;
+    }
+
+    @include breakpoint(desktop) {
+        width: 528px;
+        height: 581px;
+        top: 221px;
+    }
 
     .is-hidden & {
         transform: translateX(-50%) scale(0.125);

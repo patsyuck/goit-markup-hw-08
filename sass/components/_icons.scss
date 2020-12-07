@@ -87,24 +87,39 @@
     position: absolute;
     width: 12px;
     height: 12px;
-    top: 107px;
-    left: 55px;
+    top: 141px;
+    left: 52px;
+
+    @include breakpoint(desktop) {
+        top: 107px;
+        left: 55px;
+    }
 }
 
 .modal-phone-svg {
     position: absolute;
     width: 13px;
     height: 13px;
-    top: 174px;
-    left: 54px;
+    top: 209px;
+    left: 52px;
+
+    @include breakpoint(desktop) {
+        top: 174px;
+        left: 55px;
+    }
 }
 
 .modal-email-svg {
     position: absolute;
     width: 15px;
     height: 12px;
-    top: 243px;
-    left: 54px;
+    top: 277px;
+    left: 52px;
+
+    @include breakpoint(desktop) {
+        top: 243px;
+        left: 54px;
+    }
 }
 
 .svg-telegram {

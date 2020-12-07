@@ -10,7 +10,7 @@
     <title>Портфолио</title>
 </head>
 <body>
-    <!--<header>
+    <header>
         <div class="container container-header">
             <nav class="navigation">
                 <a class="logo" href="./index.html" lang="en">Web<span class="logo-header">Studio</span></a>
@@ -19,6 +19,7 @@
                     <li class="nav-item"><a class="nav portfolio" href="./portfolio.html">Портфолио</a></li>
                     <li class="nav-item"><a class="nav" href="">Контакты</a></li>
                 </ul>
+                <button class="button-mobile" data-menu-open data-menu-close>X</button>
             </nav>
             <address>
                 <ul class="container-address">
@@ -41,7 +42,34 @@
                 </ul>
             </address>
         </div>
-    </header>-->
+        <div class="mobile-menu" data-menu>
+            <ul class="container-mobile-nav">
+                <li class="mobile-nav-item"><a class="nav" href="./index.html">Студия</a></li>
+                <li class="mobile-nav-item"><a class="nav portfolio" href="./portfolio.html">Портфолио</a></li>
+                <li class="mobile-nav-item"><a class="nav" href="">Контакты</a></li>
+            </ul>
+            <address>
+                <ul class="container-mobile-address">
+                    <li class="mobile-contact-item">
+                        <a class="contact-header" href="mailto:info@devstudio.com">
+                            <svg class="envelope">
+                                <use href="./images/icons/sprite.svg#envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="mobile-contact-item">
+                        <a class="contact-header" href="tel:+380961111111">
+                            <svg class="smartphone">
+                                <use href="./images/icons/sprite.svg#smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                </ul>
+            </address>
+        </div>
+    </header>
 
     <main>
         <h1 hidden>Якась прихована херня</h1>
@@ -247,5 +275,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

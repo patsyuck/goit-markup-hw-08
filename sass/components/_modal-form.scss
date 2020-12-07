@@ -3,6 +3,7 @@
 }
 
 .modal-text {
+    display: flex;
     font-family: $font-main;
     font-style: 400;
     font-weight: bold;
@@ -11,6 +12,10 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: $color-header;
+
+    @include breakpoint(non-desktop) {
+        line-height: 30px;
+    }
 }
 
 .label-text {
