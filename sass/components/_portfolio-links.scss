@@ -1,9 +1,28 @@
 .block-button {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     display: flex;
     justify-content: center;
+
+    @include breakpoint(non-tablet) {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    @include breakpoint(tablet) {
+        margin-bottom: 30px;
+    }
+
+    @include breakpoint(desktop) {
+        margin-bottom: 50px;
+    }
 }
 
 .btn:not(:last-child) {
     margin-right: 8px;
+}
+
+.btn {
+    @include breakpoint(non-tablet) {
+        margin-bottom: 15px;
+    }
 }

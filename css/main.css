@@ -3,7 +3,7 @@
   padding: 0px;
 }
 
-/* for testing only*/
+/* for testing only */
 *, ::after, ::before {
   outline: 2px solid red;
 }
@@ -76,11 +76,6 @@ ul {
     line-height: 42px;
     margin-bottom: 50px;
   }
-}
-
-.block-portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .icons-web {
