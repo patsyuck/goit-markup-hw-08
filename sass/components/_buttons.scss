@@ -3,8 +3,53 @@
 
     @include breakpoint(non-tablet) {
         display: block;
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
+        background-color: $color-background;
+        border: 0px;
+    }
+
+    &:hover, &:focus {
+        cursor: pointer;
+    }
+}
+
+.menu {
+    width: 24px;
+    height: 16px;
+    fill: $color-close;
+
+    .button-mobile:hover &, .button-mobile:focus & {
+        fill: $color-accent;
+    }
+}
+
+.for-menu {
+    position: relative;
+}
+
+.button-mobile-close {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: $color-background;
+    border: 0px;
+    position: absolute;
+    top: -66px;
+    right: 15px;
+
+    &:hover, &:focus {
+        cursor: pointer;
+    }
+}
+
+.menu-close {
+    width: 19px;
+    height: 19px;
+    fill: $color-close;
+
+    .button-mobile-close:hover &, .button-mobile-close:focus & {
+        fill: $color-accent;
     }
 }
 

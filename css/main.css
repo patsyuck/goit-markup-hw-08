@@ -3,11 +3,10 @@
   padding: 0px;
 }
 
-/* for testing only */
+/* for testing only
 *, ::after, ::before {
-  outline: 2px solid red;
-}
-
+    outline: 2px solid red;
+}*/
 p, h1, h2, h3, ul {
   margin-block-start: 0px;
   margin-block-end: 0px;
@@ -90,9 +89,54 @@ ul {
 @media screen and (max-width: 767px) {
   .button-mobile {
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border: 0px;
   }
+}
+
+.button-mobile:hover, .button-mobile:focus {
+  cursor: pointer;
+}
+
+.menu {
+  width: 24px;
+  height: 16px;
+  fill: #000000;
+}
+
+.button-mobile:hover .menu, .button-mobile:focus .menu {
+  fill: #2196F3;
+}
+
+.for-menu {
+  position: relative;
+}
+
+.button-mobile-close {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #FFFFFF;
+  border: 0px;
+  position: absolute;
+  top: -66px;
+  right: 15px;
+}
+
+.button-mobile-close:hover, .button-mobile-close:focus {
+  cursor: pointer;
+}
+
+.menu-close {
+  width: 19px;
+  height: 19px;
+  fill: #000000;
+}
+
+.button-mobile-close:hover .menu-close, .button-mobile-close:focus .menu-close {
+  fill: #2196F3;
 }
 
 .button-main {
@@ -521,12 +565,18 @@ header .logo {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  bottom: -32px;
+  bottom: -8px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .studio::after, .portfolio::after {
-    bottom: -8px;
+    bottom: -38px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .studio::after, .portfolio::after {
+    bottom: -32px;
   }
 }
 
@@ -549,6 +599,7 @@ header .logo {
   position: absolute;
   left: 0;
   right: 0;
+  top: 90px;
   background-color: #FFFFFF;
   opacity: 0;
   visibility: hidden;
@@ -563,6 +614,12 @@ header .logo {
 .mobile-menu.open {
   opacity: 1;
   visibility: visible;
+  z-index: 13;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.hero.hidden {
+  display: none;
 }
 
 .container-mobile-nav {
