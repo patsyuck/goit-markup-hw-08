@@ -84,6 +84,12 @@
     <main>
         <section class="hero" data-hero>
             <div class="container section-main">
+                <!--<picture>
+                    <source srcset="./images 1x, ./images 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images 1x, ./images 2x" media="(min-width: 768px)" />
+                    <source srcset="./images 1x, ./images 2x" media="(max-width: 767px)" />
+                    <img />
+                </picture>-->
                 <h1 class="header-main">Эффективные решения для вашего бизнеса</h1>
                 <button class="button-main" type="button" data-modal-open>Заказать услугу</button>
             </div>
@@ -137,15 +143,15 @@
                 <h2 class="header-section">Чем мы занимаемся</h2>
                 <ul class="images">
                     <li class="image">
-                        <img src="./images/programer-working.jpg" width="370" height="294" alt="Написание программного кода" />
+                        <img src="./images/programer-working.jpg" srcset="./images/programer-working@2x.jpg 2x" width="370" height="294" alt="Написание программного кода" />
                         <p class="sign">Десктопные приложения</p>
                     </li>
                     <li class="image">
-                        <img src="./images/developing-application-smartphones.jpg" width="370" height="294" alt="Анализ особенностей девайса" />
+                        <img src="./images/developing-application-smartphones.jpg" srcset="./images/developing-application-smartphones@2x.jpg" width="370" height="294" alt="Анализ особенностей девайса" />
                         <p class="sign">Мобильные приложения</p>
                     </li>
                     <li class="image">
-                        <img src="./images/colour-selection.jpg" width="370" height="294" alt="Выбор цветового оформления" />
+                        <img src="./images/colour-selection.jpg" srcset="./images/colour-selection@2x.jpg" width="370" height="294" alt="Выбор цветового оформления" />
                         <p class="sign">Дизайнерские решения</p>
                     </li>
                 </ul>
@@ -157,7 +163,12 @@
                 <h2 class="header-section">Наша команда</h2>
                 <ul class="container-name">
                     <li class="block-name">
-                        <img src="./images/ihor.jpg" class="img-name" alt="фото Игоря Демьяненко" />
+                        <picture>
+                            <source srcset="./images/ihor.jpg 1x, ./images/ihor@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/ihor-t.jpg 1x, ./images/ihor-t@2x 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/ihor-m.jpg 1x, ./images/ihor-m@2x 2x" media="(max-width: 767px)" />
+                            <img src="./images/ihor.jpg" alt="фото Игоря Демьяненко" />
+                        </picture>
                         <div class="name">
                             <h3 class="header-name">Игорь Демьяненко</h3>
                             <p class="desc-name" lang="en">Product Designer</p>
@@ -194,7 +205,12 @@
                         </div>
                     </li>
                     <li class="block-name">
-                        <img src="./images/olha.jpg" class="img-name" alt="фото Ольги Репиной" />
+                        <picture>
+                            <source srcset="./images/olha.jpg 1x, ./images/olha@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/olha-t.jpg 1x, ./images/olha-t@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/olha-m.jpg 1x, ./images/olha-m@2x.jpg 2x" media="(max-width: 767px)" />
+                            <img src="./images/olha.jpg" alt="фото Ольги Репиной" />
+                        </picture>
                         <div class="name">
                             <h3 class="header-name">Ольга Репина</h3>
                             <p class="desc-name" lang="en">Frontend Developer</p>
@@ -231,7 +247,12 @@
                         </div>
                     </li>
                     <li class="block-name">
-                        <img src="./images/mykhola.jpg" class="img-name" alt="фото Николая Тарасова" />
+                        <picture>
+                            <source srcset="./images/mykhola.jpg 1x, ./images/mykhola@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/mykhola-t.jpg 1x, ./images/mykhola-t@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/mykhola-m.jpg 1x, ./images/mykhola-m@2x.jpg 2x" media="(max-width: 767px)" />
+                            <img src="./images/mykhola.jpg" alt="фото Николая Тарасова" />
+                        </picture>
                         <div class="name">
                             <h3 class="header-name">Николай Тарасов</h3>
                             <p class="desc-name" lang="en">Marketing</p>
@@ -268,7 +289,12 @@
                         </div>
                     </li>
                     <li class="block-name">
-                        <img src="./images/mykhaylo.jpg" class="img-name" alt="фото Михаила Ермакова" />
+                        <picture>
+                            <source srcset="./images/mykhaylo.jpg 1x, ./images/mykhaylo@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/mykhaylo-t.jpg 1x, ./images/mykhaylo-t@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/mykhaylo-m.jpg 1x, ./images/mykhaylo-m@2x.jpg 2x" media="(max-width: 767px)" />
+                            <img src="./images/mykhaylo.jpg" alt="фото Михаила Ермакова" />
+                        </picture>
                         <div class="name">
                             <h3 class="header-name">Михаил Ермаков</h3>
                             <p class="desc-name" lang="en">UI Designer</p>

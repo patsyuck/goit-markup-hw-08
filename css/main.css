@@ -14,6 +14,8 @@ p, h1, h2, h3, ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -1076,32 +1078,25 @@ footer address {
   }
 }
 
-.img-name {
-  width: 100%;
-  height: 100%;
-}
+/*.img-name {
+    width: 100%;
+    height: 100%;
 
-@media screen and (min-width: 480px) {
-  .img-name {
-    width: 450px;
-    height: 460px;
-  }
-}
+    @include breakpoint(mobile) {
+        width: 450px;
+        height: 460px;
+    }
 
-@media screen and (min-width: 768px) {
-  .img-name {
-    width: 354px;
-    height: 374px;
-  }
-}
+    @include breakpoint(tablet) {
+        width: 354px;
+        height: 374px;
+    }
 
-@media screen and (min-width: 1200px) {
-  .img-name {
-    width: 270px;
-    height: 260px;
-  }
-}
-
+    @include breakpoint(desktop) {
+        width: 270px;
+        height: 260px;
+    }
+}*/
 .name {
   margin-top: 30px;
   margin-bottom: 30px;
