@@ -2,13 +2,36 @@
     padding-top: 118px;
     padding-bottom: 118px;
     background-color: $color-hero-background;
-    background-image: linear-gradient(to right, $color-hero-gradient, $color-hero-gradient), url(../images/fon.jpg);
+    background-image: linear-gradient(to right, $color-hero-gradient, $color-hero-gradient), url(../images/fon-m.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, $color-hero-gradient, $color-hero-gradient), url(../images/fon-m@2x.jpg);
+    }
+
+    @include breakpoint(tablet) {
+        background-image: linear-gradient(to right, $color-hero-gradient, $color-hero-gradient), url(../images/fon-t.jpg);
+
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, $color-hero-gradient, $color-hero-gradient), url(../images/fon-t@2x.jpg);
+        }
+    }
+
     @include breakpoint(desktop) {
+        background-image: linear-gradient(to right, $color-hero-gradient, $color-hero-gradient), url(../images/fon.jpg);
         padding-top: 200px;
         padding-bottom: 200px;
+
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, $color-hero-gradient, $color-hero-gradient), url(../images/fon@2x.jpg);
+        }
     }
 }
 

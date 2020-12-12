@@ -932,29 +932,22 @@ footer address {
   }
 }
 
-.desc-portfolio, .img-portfolio {
-  width: 100%;
-  height: 100%;
-}
+/*.desc-portfolio, .img-portfolio {
+    width: 100%;
+    height: 100%; 
 
-@media screen and (min-width: 480px) {
-  .desc-portfolio, .img-portfolio {
-    width: 450px;
-  }
-}
+    @include breakpoint(mobile) {
+        width: 450px;
+    }
 
-@media screen and (min-width: 768px) {
-  .desc-portfolio, .img-portfolio {
-    width: 354px;
-  }
-}
+    @include breakpoint(tablet) {
+        width: 354px;
+    }
 
-@media screen and (min-width: 1200px) {
-  .desc-portfolio, .img-portfolio {
-    width: 370px;
-  }
-}
-
+    @include breakpoint(desktop) {
+        width: 370px;
+    }
+}*/
 .link-portfolio {
   display: block;
   /*width: 370px;
