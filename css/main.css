@@ -740,7 +740,8 @@ footer address {
 
 @media screen and (min-width: 1200px) {
   .center-footer, .right-footer {
-    padding-top: 12px;
+    /*padding-top: 12px;*/
+    padding-top: 8px;
   }
 }
 
@@ -857,6 +858,9 @@ footer address {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon-m.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -891,10 +895,6 @@ footer address {
   }
 }
 
-/*.hero.open {
-    opacity: 0;
-    visibility: hidden;
-}*/
 .section-main {
   display: flex;
   flex-direction: column;
@@ -902,10 +902,10 @@ footer address {
 }
 
 .header-main {
-  width: 360px;
-  height: 84px;
-  font-size: 26px;
-  line-height: 42px;
+  width: 696px;
+  height: 120px;
+  font-size: 44px;
+  line-height: 60px;
   font-weight: 900;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -914,12 +914,19 @@ footer address {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .header-main {
-    width: 696px;
-    height: 120px;
-    font-size: 44px;
-    line-height: 60px;
+    width: 360px;
+    height: 84px;
+    font-size: 26px;
+    line-height: 42px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .header-main {
+    width: 100%;
+    height: 126px;
   }
 }
 
@@ -995,7 +1002,12 @@ footer address {
   text-transform: uppercase;
   line-height: 16px;
   margin-bottom: 10px;
-  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .header-feature {
+    text-align: center;
+  }
 }
 
 .pictures-section {

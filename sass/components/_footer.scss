@@ -85,7 +85,8 @@ footer {
 
 .center-footer, .right-footer {
     @include breakpoint(desktop) {
-        padding-top: 12px;
+        /*padding-top: 12px;*/
+        padding-top: 8px;
     }
 }
 

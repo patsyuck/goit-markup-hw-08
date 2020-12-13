@@ -5,6 +5,9 @@
     background-image: linear-gradient(to right, $color-hero-gradient, $color-hero-gradient), url(../images/fon-m.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 
     @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
@@ -35,11 +38,6 @@
     }
 }
 
-/*.hero.open {
-    opacity: 0;
-    visibility: hidden;
-}*/
-
 .section-main {
     display: flex;
     flex-direction: column;
@@ -47,10 +45,10 @@
 }
 
 .header-main {
-    width: 360px;
-    height: 84px;
-    font-size: 26px;
-    line-height: 42px;
+    width: 696px;
+    height: 120px;
+    font-size: 44px;
+    line-height: 60px;
     font-weight: 900;
     color: $color-background;
     text-transform: uppercase;
@@ -58,10 +56,15 @@
     letter-spacing: 0.06em;
     margin-bottom: 30px;
 
-    @include breakpoint(desktop) {
-        width: 696px;
-        height: 120px;
-        font-size: 44px;
-        line-height: 60px;
+    @include breakpoint(non-desktop) {
+        width: 360px;
+        height: 84px;
+        font-size: 26px;
+        line-height: 42px;
+    }
+
+    @media screen and (max-width: 359px) {
+        width: 100%;
+        height: 126px;
     }
 }
